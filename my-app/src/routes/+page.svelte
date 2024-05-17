@@ -18,7 +18,7 @@
 			</picture>
 		</span>
 
-		to your new<br />SvelteKit app
+		Meie tulevane Desicion Maker rakendus
 	</h1>
 
 	<h2>
