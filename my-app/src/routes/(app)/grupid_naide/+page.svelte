@@ -1,8 +1,6 @@
 <script>
 	import Button from "$lib/components/Button.svelte";
     import Input from "$lib/components/Input.svelte";
-	import choicesIcon from '$lib/images/choices.svg';
-    import resultsIcon from '$lib/images/results.svg';
     import groupsIcon from '$lib/images/groups.svg';
 </script>
 
@@ -12,9 +10,11 @@
 			<img src={groupsIcon} alt="Choices icon" width="100 px"/>
 		</div>
 		<div class="action-area">
-			<Button>Gruppide loomineee </Button>
-            <Button>Gruppid</Button>
+			<Button>Loo uus grupp</Button>
+			<Button></Button>
 		</div>
+		<Input></Input>
+		<h1>Lorem ipsum</h1>
 	</div>
 </section>
 
