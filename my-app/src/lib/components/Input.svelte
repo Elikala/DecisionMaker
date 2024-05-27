@@ -2,6 +2,7 @@
     export let disabled = false;  
     export let value = "";
     export let placeholder: string;
+    export let type: "text" | "password" | "email" = "text";
 
 </script>
 
@@ -37,6 +38,13 @@
     input {
         width: 100%;
         background: #F8F8F8;
+        border: #F8F8F8;
+    }
+
+    input:active {
+        width: 100%;
+        background: #F8F8F8;
+        border: #F8F8F8;
     }
  
     .input:hover {
@@ -50,6 +58,12 @@
 </style>
 
 
-<div class="input" class:disabled>
-    <input {placeholder} {disabled} bind:value type="text" />
+<div class="input">
+    {#if type === "password"}
+        <input {placeholder} {disabled} bind:value type="password" />
+    {:else if type === "email"}
+        <input {placeholder} {disabled} bind:value type="email" />
+    {:else}
+        <input {placeholder} {disabled} bind:value type="text" />
+    {/if}
 </div>
