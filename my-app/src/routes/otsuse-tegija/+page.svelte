@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>paid</title>
+	<title>Otsuse tegija</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -26,7 +26,7 @@
 
 		</div>
 		<div class="action-area">
-			<Button>Vaata tulemusi</Button>       
+			<Button>Vaatan tulemusi</Button>       
 		</div>
 	</div>
 
