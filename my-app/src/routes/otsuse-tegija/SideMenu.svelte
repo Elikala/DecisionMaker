@@ -66,11 +66,11 @@
         <img src={logo} alt="logo"/>
         <p>Desicion Maker</p>
     </div>
-    <div class="active-menu-item">
-        <img src={homeIcon} alt="Home icon" width="35px" height="35px"/>
-        <p>Peamenüü</p>
-    </div>
     <div class="menu-item">
+        <img src={homeIcon} alt="Home icon" width="35px" height="35px"/>
+        <p><a href="/">Peamenüü</a></p>
+    </div>
+    <div class="active-menu-item">
         <img src={choicesIcon} alt="Choices icon" width="35px"/>
         <p>Otsuste tegija</p>
     </div>

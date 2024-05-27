@@ -3,13 +3,10 @@
 	import choicesIcon from '$lib/images/choices.svg';
     import resultsIcon from '$lib/images/results.svg';
     import groupsIcon from '$lib/images/groups.svg';
-	function handleClick() {
-        window.location.href = "/otsuse-tegija";
-    }
 </script>
 
 <svelte:head>
-	<title>Home</title>
+	<title>paid</title>
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
@@ -19,7 +16,7 @@
 			<img src={choicesIcon} alt="Choices icon" width="100px"/>
 		</div>
 		<div class="action-area">
-			<Button on:click={() => {handleClick()}}>Otsuse tegija</Button>
+			<Button>Loon uue otsuse tegija</Button>
 		</div>
 	</div>
 
@@ -33,14 +30,6 @@
 		</div>
 	</div>
 
-	<div class="back-container" >
-		<div class="back-container-green">
-			<img src={groupsIcon} alt="Choices icon" width="100 px"/>
-		</div>
-		<div class="action-area">
-			<Button>Gruppide loomine </Button>
-		</div>
-	</div> 
 	
 </section>
 
