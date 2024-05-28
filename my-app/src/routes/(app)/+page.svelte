@@ -26,10 +26,9 @@
 	<div class="back-container" >
 		<div class="back-container-green">
 			<img src={resultsIcon} alt="Results icon" width="100px"/>
-
 		</div>
-		<div class="action-area">
-			<Button>Vaata tulemusi</Button>       
+		<div class="action-area">    
+			<Button>Vaata tulemusi</Button> 
 		</div>
 	</div>
 
