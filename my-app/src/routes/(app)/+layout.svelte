@@ -5,9 +5,11 @@
 </script>
 
 <div class="app">
+	 
     <SideMenu/>
 
 	<main>
+		<Header></Header>
 		<slot />
 	</main>
 
