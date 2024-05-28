@@ -5,11 +5,11 @@
 
   let username = '';
   let password = '';
-  let user = auth.getUser();
+  let userLoggedIn = false;
 
   function handleLogin() {
     if (auth.login(username, password)) {
-      user = auth.getUser();
+      userLoggedIn = true;
     } else {
       alert('Login failed');
     }
@@ -17,12 +17,12 @@
 
   function handleLogout() {
     auth.logout();
-    user = null;
+    userLoggedIn = false;
   }
 </script>
 
-{#if user}
-  <p>Welcome, {user.name}</p>
+{#if userLoggedIn}
+  <p>Welcome</p>
   <button on:click={handleLogout}>Logout</button>
 {:else}
   <form on:submit|preventDefault={handleLogin}>
