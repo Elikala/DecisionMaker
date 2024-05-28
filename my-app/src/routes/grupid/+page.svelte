@@ -16,20 +16,10 @@
 <section>
 	<div class="back-container" >
 		<div class="back-container-green">
-			<img src={choicesIcon} alt="Choices icon" width="100px"/>
+			<img src={groupsIcon} alt="Choices icon" width="100px"/>
 		</div>
 		<div class="action-area">
-			<Button on:click={() => {handleClick()}}>Otsuse tegija</Button>
-		</div>
-	</div>
-
-	<div class="back-container" >
-		<div class="back-container-green">
-			<img src={resultsIcon} alt="Results icon" width="100px"/>
-
-		</div>
-		<div class="action-area">
-			<Button>Vaata tulemusi</Button>       
+			<Button on:click={() => {handleClick()}}>Loo uus grupp</Button>
 		</div>
 	</div>
 
@@ -38,7 +28,7 @@
 			<img src={groupsIcon} alt="Choices icon" width="100 px"/>
 		</div>
 		<div class="action-area">
-			<Button>Gruppide123 loomine </Button>
+			<Button>Vaata oma gruppe</Button>
 		</div>
 	</div> 
 	

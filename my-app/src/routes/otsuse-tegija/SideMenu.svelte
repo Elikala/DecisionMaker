@@ -66,13 +66,13 @@
         <img src={logo} alt="logo"/>
         <p>Desicion Maker</p>
     </div>
-    <div class="menu-item">
+        <div class="menu-item">
         <img src={homeIcon} alt="Home icon" width="35px" height="35px"/>
         <p><a href="/">Peamenüü</a></p>
     </div>
     <div class="active-menu-item">
         <img src={choicesIcon} alt="Choices icon" width="35px"/>
-        <p>Otsuste tegija</p>
+        <p><a href="/otsuse-tegija">Otsuste tegija</a></p>
     </div>
     <div class="menu-item">
         <img src={resultsIcon} alt="Results icon" width="35px"/>
@@ -80,7 +80,7 @@
     </div>
     <div class="menu-item">
         <img src={groupsIcon} alt="Groups icon" width="35px"/>
-        <p>Grupid</p>
+        <p><a href="/grupid">Grupid</a></p>
     </div>
     <div class="menu-item">
         <img src={premiumIcon} alt="Premium icon" width="35px"/>
