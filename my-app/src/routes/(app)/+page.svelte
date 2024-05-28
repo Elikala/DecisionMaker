@@ -6,9 +6,6 @@
 	function handleClick() {
         window.location.href = "/otsuse-tegija";
     }
-	function handleClick2() {
-        window.location.href = "/grupid";
-    }
 </script>
 
 <svelte:head>
@@ -40,7 +37,7 @@
 			<img src={groupsIcon} alt="Choices icon" width="100 px"/>
 		</div>
 		<div class="action-area">
-			<Button on:click={() => {handleClick2()}}>Gruppide loomine</Button>
+			<Button>Gruppide loomine </Button>
 		</div>
 	</div> 
 	

@@ -80,11 +80,11 @@
     </div>
     <div class="active-menu-item">
         <img src={homeIcon} alt="Home icon" width="35px" height="35px"/>
-        <p><a href="/">Peamenüü</a></p>
+        <p>Peamenüü</p>
     </div>
     <div class="menu-item">
         <img src={choicesIcon} alt="Choices icon" width="35px"/>
-        <p><a href="/otsuse-tegija">Otsuste tegija</a></p>
+        <p>Otsuste tegija</p>
     </div>
     <div class="menu-item">
         <img src={resultsIcon} alt="Results icon" width="35px"/>
@@ -92,7 +92,7 @@
     </div>
     <div class="menu-item">
         <img src={groupsIcon} alt="Groups icon" width="35px"/>
-        <p><a href="/grupid">Grupid</a></p>
+        <p>Grupid</p>
     </div>
     <div class="menu-item">
         <img src={premiumIcon} alt="Premium icon" width="35px"/>
