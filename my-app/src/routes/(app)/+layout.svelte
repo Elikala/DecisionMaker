@@ -2,6 +2,8 @@
 	import Header from './Header.svelte';
 	import '$lib/styles.css';
 	import SideMenu from "./SideMenu.svelte";
+
+
 </script>
 
 <div class="app">

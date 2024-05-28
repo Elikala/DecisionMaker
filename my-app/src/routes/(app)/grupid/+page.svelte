@@ -1,19 +1,27 @@
-<script>
+<script lang="ts">
 	import Button from "$lib/components/Button.svelte";
 	import choicesIcon from '$lib/images/choices.svg';
     import resultsIcon from '$lib/images/results.svg';
     import groupsIcon from '$lib/images/groups.svg';
 
+	import { onMount } from 'svelte';
 
+	let grupidLoadCount = 0;
+
+	onMount(() => {
+		const savedCount = localStorage.getItem('grupidLoadCount');
+		grupidLoadCount = savedCount ? parseInt(savedCount, 10) : 0;
+
+		grupidLoadCount++;
+
+		localStorage.setItem('grupidLoadCount', grupidLoadCount.toString());
+	});
 
 </script>
 
-<svelte:head>
-	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
-</svelte:head>
-
 <section>
+	<h1>This page has been loaded {grupidLoadCount} times</h1>
+	<h1>Grupid<h1>
 	<div class="back-container" >
 		<div class="back-container-green">
 			<img src={choicesIcon} alt="Choices icon" width="100px"/>
@@ -22,25 +30,6 @@
 			<Button>Otsuse tegija</Button>
 		</div>
 	</div>
-
-	<div class="back-container" >
-		<div class="back-container-green">
-			<img src={resultsIcon} alt="Results icon" width="100px"/>
-
-		</div>
-		<div class="action-area">
-			<Button>Vaata tulemusi</Button>       
-		</div>
-	</div>
-
-	<div class="back-container" >
-		<div class="back-container-green">
-			<img src={groupsIcon} alt="Choices icon" width="100 px"/>
-		</div>
-		<div class="action-area">
-			<Button>Gruppide loomine </Button>
-		</div>
-	</div> 
 	
 </section>
 

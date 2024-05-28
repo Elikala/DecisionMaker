@@ -52,6 +52,6 @@
         <Button {disabled} {style} {size}>{content}</Button>
     </Hst.Variant>
     <Hst.Variant title="Button secondary">
-        <Button {disabled} {style} {size}>{content}</Button>
+        <Button {disabled} style="secondary" {size}>{content}</Button>
     </Hst.Variant>
 </Hst.Story>

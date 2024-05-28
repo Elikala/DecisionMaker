@@ -6,6 +6,9 @@
     import groupsIcon from '$lib/images/groups.svg';
     import premiumIcon from '$lib/images/premium.svg';
     import logoutIcon from '$lib/images/logout.svg';
+
+    import { goto } from "$app/navigation";
+
 </script>
 
 <style>
@@ -54,19 +57,23 @@
         <img src={logo} alt="logo"/>
         <p>Desicion Maker</p>
     </div>
-    <div class="menu-item">
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div class="menu-item" on:click={() => goto("/")} on:keydown>
         <img src={homeIcon} alt="Home icon" width="35px" height="35px"/>
         <p>Peamenüü</p>
     </div>
-    <div class="menu-item">
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div class="menu-item" on:click={() => goto("/otsuse_tegija")} on:keydown>
         <img src={choicesIcon} alt="Choices icon" width="35px"/>
         <p>Otsuste tegija</p>
     </div>
-    <div class="menu-item">
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div class="menu-item" on:click={() => goto("/tulemused")} on:keydown>
         <img src={resultsIcon} alt="Results icon" width="35px"/>
         <p>Tulemused</p>
     </div>
-    <div class="menu-item">
+    <!-- svelte-ignore a11y-no-static-element-interactions -->
+    <div class="menu-item" on:click={() => goto("/grupid")} on:keydown>
         <img src={groupsIcon} alt="Groups icon" width="35px"/>
         <p>Grupid</p>
     </div>
