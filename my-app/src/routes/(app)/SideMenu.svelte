@@ -6,21 +6,28 @@
     import groupsIcon from '$lib/images/groups.svg';
     import premiumIcon from '$lib/images/premium.svg';
     import logoutIcon from '$lib/images/logout.svg';
+
+    let isOpen = true;
+    
+
 </script>
 
 <style>
     .container{
-        display: flex;
+        display: none;
         flex-direction: column;
         background: #ffffff;
         width: max-content;
+
 
         border: 1px solid black;
         box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.24);
         border-radius: 0px 10px 10px 0px;
 
+
         padding: 20px;
     }
+
 
     .logo {
         display: flex;
@@ -29,6 +36,10 @@
         height: max-content;
         min-width: 200px;
         align-items: center;
+    }
+
+    .container.open{
+        display: flex;
     }
 
     .menu-item {
@@ -61,10 +72,11 @@
     }
 </style>
 
-<div class="container">
+<div class="container" class:open={isOpen}> 
     <div class="logo">
         <img src={logo} alt="logo"/>
         <p>Desicion Maker</p>
+        <button on:click={() => (isOpen = false)}>X</button>
     </div>
     <div class="active-menu-item">
         <img src={homeIcon} alt="Home icon" width="35px" height="35px"/>

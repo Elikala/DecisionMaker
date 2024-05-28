@@ -1,7 +1,6 @@
 <script lang="ts">
     export let disabled = false;  
     export let value = "";
-    export let placeholder: string;
 
 </script>
 
@@ -51,5 +50,5 @@
 
 
 <div class="input" class:disabled>
-    <input {placeholder} {disabled} bind:value type="text" />
+    <input {disabled} bind:value type="text" />
 </div>
