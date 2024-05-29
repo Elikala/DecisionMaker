@@ -4,7 +4,10 @@
     import resultsIcon from '$lib/images/results.svg';
     import groupsIcon from '$lib/images/groups.svg';
 	function handleClick() {
-        window.location.href = "/otsuse-tegija";
+        window.location.href = "/loo-grupp";
+    }
+	function handleClick2() {
+        window.location.href = "/sinu-gruppid";
     }
 </script>
 
@@ -28,7 +31,7 @@
 			<img src={groupsIcon} alt="Choices icon" width="100 px"/>
 		</div>
 		<div class="action-area">
-			<Button>Vaata oma gruppe</Button>
+			<Button on:click={() => {handleClick2()}}>Vaata oma gruppe</Button>
 		</div>
 	</div> 
 	
