@@ -72,7 +72,7 @@
     }
 </style>
 
-<div class="container" class:open={isOpen}> 
+<div  id="sidemenu" class="container" class:open={isOpen}> 
     <div class="logo">
         <img src={logo} alt="logo"/>
         <p>Desicion Maker</p>
